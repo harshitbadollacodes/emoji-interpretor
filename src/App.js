@@ -48,8 +48,7 @@ export default function App() {
           color: "#fff",
           padding: "0.5rem ",
           borderRadius: "10px",
-          width: "80%",
-          height: "2rem"
+          width: "80%"
         }}
       >
         {meaning}
