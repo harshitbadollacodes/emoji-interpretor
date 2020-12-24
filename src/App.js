@@ -24,8 +24,10 @@ export default function App() {
   function newInput(e) {
     let meaning = emojiDictionary[e.target.value];
 
-    if (meaning === undefined) {
-      setMeaning("We don't have the meaning");
+    if (e.target.value.length === 0) {
+      setMeaning("Enter an emoji in the above field");
+    } else if (meaning === undefined) {
+      setMeaning("We dont have the meaning");
     } else {
       setMeaning(`${e.target.value}${meaning}`);
     }
